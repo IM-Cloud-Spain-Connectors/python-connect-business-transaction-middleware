@@ -3,12 +3,13 @@
 #
 # Copyright (c) 2023 Ingram Micro. All Rights Reserved.
 #
-from typing import Callable, List, Optional
+from typing import Callable, List, Optional, TypeVar
 
 from connect.eaas.core.responses import BackgroundResponse
 from rndi.connect.business_transactions.contracts import FnBackgroundExecution
 
-Middleware = Callable[[dict, Optional[FnBackgroundExecution]], BackgroundResponse]
+TBackgroundResponse = TypeVar('TBackgroundResponse', bound=BackgroundResponse)
+Middleware = Callable[[dict, Optional[FnBackgroundExecution]], TBackgroundResponse]
 
 
 def make_middleware_callstack(
