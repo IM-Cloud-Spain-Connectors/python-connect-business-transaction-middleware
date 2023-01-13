@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rndi-connect-business-transaction-middleware"
 version = "1.0.0"
-description = "Provides simple request-response middleware for business transactions."
+description = "Provides simple request-response style middleware for business transactions."
 authors = ["Unay Santisteban <davidunay.santisteban@cloudblue.com>"]
 license = "Apache-2.0"
 readme = "README.md"
