@@ -1,4 +1,5 @@
 from random import randint
+
 from rndi.connect.business_transaction_middleware.middleware import make_middleware_callstack
 
 

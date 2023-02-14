@@ -1,10 +1,9 @@
-from typing import Optional, List
+from typing import List, Optional
 
 import pytest
 from connect.eaas.core.responses import BackgroundResponse
 from rndi.connect.business_transactions.adapters import prepare
 from rndi.connect.business_transactions.contracts import BackgroundTransaction, FnBackgroundExecution
-
 from rndi.connect.business_transaction_middleware.middleware import Middleware
 
 
