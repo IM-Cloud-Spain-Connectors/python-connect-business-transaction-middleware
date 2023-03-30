@@ -32,7 +32,6 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4"
-connect-eaas-core = "^26.15"
 rndi-connect-business-transactions = { git = "https://github.com/othercodes/python-connect-business-transactions.git", branch = "master" }
 
 [tool.poetry.dev-dependencies]
